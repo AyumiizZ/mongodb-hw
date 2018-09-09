@@ -16,17 +16,13 @@ html
               | Home 
               span.sr-only (current)
           li.nav-item
-            a.nav-link(href='/article/add') Add Article
-          //- li.nav-item
-          //-   a.nav-link.disabled(href='#') Disabled
-          //- li.nav-item.dropdown
-          //-   a#dropdown05.nav-link.dropdown-toggle(href='https://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
-          //-   .dropdown-menu(aria-labelledby='dropdown05')
-          //-     a.dropdown-item(href='#') Action
-          //-     a.dropdown-item(href='#') Another action
-          //-     a.dropdown-item(href='#') Something else here
+            a.nav-link(href='/articles/add') Add Article
     br
     .container
+      != messages('message',locals)
+      if errors
+        each error, i in errors
+          div(class="alert alert-danger") #{error.msg}
       block content
       br
       hr
