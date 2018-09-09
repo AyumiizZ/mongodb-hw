@@ -1,0 +1,24 @@
+{
+  "name": "softeng08",
+  "version": "1.0.0",
+  "description": "Software Engineering class - Assignment08",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Korrawit Chaikangwan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyumiizZ/mongodb-hw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AyumiizZ/mongodb-hw/issues"
+  },
+  "homepage": "https://github.com/AyumiizZ/mongodb-hw#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.13",
+    "pug": "^2.0.3"
+  }
+}
